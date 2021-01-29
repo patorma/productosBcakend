@@ -1,0 +1,30 @@
+{
+  "name": "products_api",
+  "version": "1.0.0",
+  "description": "a simple rest api",
+  "main": "index.js",
+  "scripts": {
+    "build":"babel src --out-dir build",
+    "dev": "nodemon src/index --exec babel-node",
+    "start": "node build/index"
+  },
+  "keywords": [],
+  "author": "Patricio",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
